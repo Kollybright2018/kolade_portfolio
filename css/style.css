@@ -8,9 +8,7 @@ box-sizing: border-box;
 body{
     background-color: rgb(197, 194, 194);
     padding:10px 20px;
-    
 }
-
 header{
     display: flex;
     flex-direction: column;
@@ -92,11 +90,15 @@ header{
 .banner-text h2{
 position: relative;
 font-weight: 600;
+text-align: center;
 }
 .banner-text h1{
     font-size: 70px;
+    position: relative;
+    text-align: center;
 }
 .banner-text p{
+    text-align: center;
     font-weight: 600;
     font-size: 17px;
     margin-bottom: 23px;
@@ -141,9 +143,7 @@ font-family: 'Times New Roman', Times, serif;
     background-color: white;
     justify-content: space-evenly;
 }
-.img-con{
-    
-}
+
 .img-con img{
  max-width: 40%;
  margin: 0 100px;
@@ -313,9 +313,7 @@ padding:0px 20px;
     font-size: 30px;
 }
 
-.ser-bx-t{
 
-}
 .do{
     width: 50%;
     display: flex;
@@ -336,7 +334,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 /* Contact section */
 .contact{
-    background-color: blueviolet;
+    background-color: white;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -348,11 +346,12 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     border: 2px chocolate;
     align-items: center;
-    background-color: rgb(255, 214, 160);
+    background-color: rgb(240, 240, 240);
     border-radius: 15px;
 }
 .con-head h1{
-    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 .con-head p{
     font-weight: 500;
@@ -370,11 +369,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .con-icon-con p{
    font-size: 15px;
    font-weight: 700;
-   color: rgb(48, 2, 92);
+   color: rgb(22, 1, 41);
 }
 .ic i{
     padding-bottom: 10px;
-    color:  blueviolet;
+    color:  rgb(6, 1, 10);
     font-size: 30px; 
     /* margin-bottom: 7px; */
 }
@@ -386,15 +385,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .con-form{
    margin-bottom: 20px;
-    padding:30px 10px;
+    padding:30px 0px;
     border-radius: 10px;
     background-color: rgb(250, 250, 250);
 }
 .form{
-
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .form-group{
@@ -413,12 +411,15 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 .btn{
-    background-color:blueviolet;
+    background-color:rgb(3, 3, 3);
     padding: 10px 40px;
     text-align: center;
     margin: 2px 5px;
     color: white;
     border-radius: 20px;
+}
+.left{
+    margin-right: 15px;
 }
 
 /* Media Query Section */
@@ -427,6 +428,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
      display: flex;
      flex-direction: column;
      align-items: center;
+ }
+ marquee{
+     max-width: 100%;
+     font-size: 13px;
+     behavior: slide;
  }
  .bio-img, .bio-content{
      width: 80%;
@@ -471,3 +477,10 @@ align-items: center;
      padding: 10px 0;
  }   
 }
+@media (max-width:379px) {
+
+    .con-form{
+        padding: 10px 0;
+        width: 80%;
+    }   
+   }
